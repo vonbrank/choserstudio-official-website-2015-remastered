@@ -1,0 +1,150 @@
+.card {
+
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+
+    &--medium {
+        width: 100%;
+        padding-top: 100%;
+    }
+
+    &--wide {
+        width: 100%;
+        padding-top: 50%;
+    }
+
+    &__side {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 1rem;
+        box-shadow: 0 2rem 4rem rgba($color-black, 0.15);
+        overflow: hidden;
+        transition: all 0.8s;
+
+        &--front {
+            // background-color: dodgerblue;
+        }
+
+        &--back {
+
+            &-1 {
+                background-image: linear-gradient(to right bottom, 
+                                                rgba($color-secondary-light, 0.85), 
+                                                rgba($color-secondary-dark, 0.85));
+            }
+
+            &-2 {
+                background-image: linear-gradient(to right bottom, 
+                                                rgba($color-pink-bilibili-light, 0.85), 
+                                                rgba($color-pink-bilibili-dark, 0.85));
+            }
+
+            &-3 {
+                background-image: linear-gradient(to right bottom, 
+                                                rgba($color-green-nvidia-light, 0.85), 
+                                                rgba($color-green-nvidia-dark, 0.85));
+            }
+            
+            // background-color: orangered;
+        }
+
+    }
+
+    &--medium:hover &__side--front {
+        transform: translate(-50%, -50%) rotateY(-180deg);
+    }
+
+    &--medium &__side--back {
+        transform: translate(-50%, -50%) rotateY(180deg);
+    }
+
+    &--medium:hover &__side--back {
+        transform: translate(-50%, -50%) rotateY(0deg);
+    }
+
+
+    &--wide:hover &__side--front {
+        transform: translate(-50%, -50%) rotateX(-180deg);
+    }
+
+    &--wide &__side--back {
+        transform: translate(-50%, -50%) rotateX(180deg);
+    }
+
+    &--wide:hover &__side--back {
+        transform: translate(-50%, -50%) rotateX(0deg);
+    }
+
+
+
+    &__picture {
+        background-size: cover;
+        height: 70%;
+
+        &--1 {
+            background-image: url(../../img/grace.jpg);
+        }
+
+        &--2 {
+            background-image: url(../../img/bilibili-coin.png);
+        }
+
+        &--3 {
+            background-image: url(../../img/QM6000.jpg);
+        }
+    }
+
+    &__detail {
+        padding: 3rem;
+    }
+
+    &__heading {
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: $color-grey-dark-2;
+        margin-bottom: 2rem;
+
+        &--1 {
+            color: $color-secondary;
+        }
+
+        &--2 {
+            color: $color-pink-bilibili;
+        }
+
+        &--3 {
+            color: $color-green-nvidia;
+        }
+    }
+
+    &__text {
+        font-size: $default-font-size;
+        color: $color-grey-dark-2;
+    }
+
+    &__more-info {
+        @include absCenter;
+
+        color: $color-white;
+        text-align: center;
+        width: 80%;
+
+        &--sub {
+            font-size: $default-font-size;
+        }
+
+        &--main {
+            font-size: 4rem;
+            margin-bottom: 10rem;
+            text-transform: uppercase;
+        }
+    }
+
+
+}

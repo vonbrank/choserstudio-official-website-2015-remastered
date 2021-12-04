@@ -2,6 +2,7 @@
     &,
     &:link,
     &:visited {
+        
         display: inline-block;
         text-decoration: none;
         font-size: $default-font-size;
@@ -10,6 +11,7 @@
         font-weight: 400;
         transition: all 0.2s;
         position: relative;
+        backface-visibility: hidden;
         
     }
 
@@ -55,6 +57,8 @@
     &--white {
         background-color: $color-white;
         color: $color-grey-dark;
+        
+        z-index: 1;
 
         &::after {
             background-color: $color-white;

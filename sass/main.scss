@@ -6,7 +6,10 @@
 @import "base/base";
 
 @import "components/button";
+@import "components/card";
 
 @import "layout/navigation";
 @import "layout/grid";
-@import "layout/header"
+@import "layout/header";
+
+@import "pages/home";
