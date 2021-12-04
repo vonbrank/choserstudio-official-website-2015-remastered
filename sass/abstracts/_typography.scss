@@ -38,3 +38,17 @@ body {
         text-shadow: 0 1rem 2rem rgba($color-black, 0.15);
     }
 }
+
+.heading-tertiary {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    &__main {
+        font-size: 3rem;
+        font-weight: 400;
+    }
+
+    &__sub {
+        font-size: $default-font-size;
+    }
+}
