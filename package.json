@@ -1,0 +1,22 @@
+{
+  "name": "choserstudio-official-website-2015-remastered",
+  "version": "1.0.0",
+  "description": "the remastered upgrade for CHOSER STUDIO official website version-2015 to test modern css/sass technique and other experimental features",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vonbrank/choserstudio-official-website-2015-remastered.git"
+  },
+  "author": "vonbrank",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/vonbrank/choserstudio-official-website-2015-remastered/issues"
+  },
+  "homepage": "https://github.com/vonbrank/choserstudio-official-website-2015-remastered#readme"
+}

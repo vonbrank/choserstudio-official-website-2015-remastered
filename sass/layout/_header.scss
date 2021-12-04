@@ -1,0 +1,18 @@
+.header {
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    background-image: linear-gradient(to right bottom, rgba($color-black, 0.2), 
+                      rgba($color-black, 0.2)), url(../../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+
+    &__text-box {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+}
