@@ -154,11 +154,11 @@ html, body {
     background-size: cover;
     height: 70%; }
     .card__picture--1 {
-      background-image: url(../../img/grace.jpg); }
+      background-image: url(../img/grace.jpg); }
     .card__picture--2 {
-      background-image: url(../../img/bilibili-coin.png); }
+      background-image: url(../img/bilibili-coin.png); }
     .card__picture--3 {
-      background-image: url(../../img/QM6000.jpg); }
+      background-image: url(../img/QM6000.jpg); }
   .card__detail {
     padding: 3rem; }
   .card__heading {
@@ -288,7 +288,7 @@ html, body {
   width: 100%;
   overflow: hidden;
   height: 80vh;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../img/banner.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/banner.jpg);
   background-size: cover;
   background-position: center center; }
   .header__text-box {
